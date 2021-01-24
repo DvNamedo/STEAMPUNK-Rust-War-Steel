@@ -21,7 +21,6 @@ import JMTemplate.content.*;
 public class Main extends Mod {
     public Main(){
         Events.on(ClientLoadEvent.class, e -> {
-            new ModLoader().load();
             onlineMode = new SocketManager().connectionCheck("www.google.com",80);
             if(onlineMode) {
                 this.updateCheck();
@@ -39,6 +38,7 @@ public class Main extends Mod {
 
     @Override
     public void loadContent(){
+        new ModLoader().load();
     }
 
     private void updateCheck() {
