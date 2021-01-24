@@ -20,7 +20,7 @@ public class SBlocks implements ContentList {
             size = 1;
             speed = 12f / 180f;
             itemCapacity = 30;
-            conveyorPlacement = true;
+            conveyorPlacement = false;
             requirements(Category.distribution, with(Items.copper, 10));
 
         }};
