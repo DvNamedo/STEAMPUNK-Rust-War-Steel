@@ -18,7 +18,7 @@ public class SBlocks implements ContentList {
 
             health = 100;
             size = 1;
-            speed = 12f / 180f;
+            speed = 4f / 30f;
             itemCapacity = 30;
             requirements(Category.distribution, with(Items.copper, 10));
 
