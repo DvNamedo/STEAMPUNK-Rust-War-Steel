@@ -20,7 +20,7 @@ public class SBlocks implements ContentList {
         railWay = new StackConveyor("railWay"){{
             health = 100;
             size = 1;
-            speed = 2f / 40f;
+            speed = 4f / 30f;
             itemCapacity = 20;
             requirements(Category.distribution, with(Items.copper, 10));
         }};
