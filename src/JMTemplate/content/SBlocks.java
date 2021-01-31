@@ -24,14 +24,6 @@ public class SBlocks implements ContentList {
             itemCapacity = 20;
             requirements(Category.distribution, with(Items.copper, 10));
         }};
-        
-        advRailway = new StackConveyor("advRailway"){{
-            health = 100;
-            size = 1;
-            speed = 4f / 20f;
-            itemCapacity = 40;
-            requirements(Category.distribution, with(Items.copper, 20));
-        }};
 
         woodenBlocka = new Floor("woodenBlocka"){{
             variants = 0;
