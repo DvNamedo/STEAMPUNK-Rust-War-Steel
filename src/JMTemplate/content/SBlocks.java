@@ -18,11 +18,19 @@ public class SBlocks implements ContentList {
     @Override
     public void load() {
         railWay = new StackConveyor("railWay"){{
-            health = 100;
+            health = 50;
             size = 1;
-            speed = 4f / 30f;
+            speed = 4f / 45f;
             itemCapacity = 20;
             requirements(Category.distribution, with(Items.copper, 10));
+        }};
+        
+        advRailway = new StackConveyor("advRailway"){{
+            health = 100;
+            size = 1;
+            speed = 4f / 20f;
+            itemCapacity = 40;
+            requirements(Category.distribution, with(Items.copper, 20));
         }};
 
         woodenBlocka = new Floor("woodenBlocka"){{
